@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studiestartsprøve</title>
+    <meta name="robots" content="no Index">
+    <link rel="stylesheet" href="_02_web.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="burger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Playfair+Display&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c5d83fc88a.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <a href="index.html"><img src="img/svg/SVG/SVG/icon_hvid.svg" alt="mit Logo" class="logo"></a>
+        </div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="om_mig.html">Om mig</a></li>
+            <li><a href="02_web.html">Grundlæggende Web</a></li>
+            <li><a href="03_uxui.html">Cremekrukken</a></li>
+            <li><a href="04_animation.html">Animation</a></li>
+            <li><a href="05_indhold.html">Pleasant</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+        </ul>
+    </nav>
+
+
+    <main>
+        <h1>Web 02 - Studiestartsprøven</h1>
+        <div class="left-right">
+            <img src="img/03_cremekrukken/webp/cremekrukken.webp" alt="screenshot af cremekrukken" class="left">
+            <div class="right">
+                <h2>Formålet</h2>
+                <p>
+                    Grundlæggende Web var temaet, der introducerede mig til webdesign og de mest basale elementer til
+                    opbygning af en hjemmeside. I forløbet oprettede jeg et domæne og lærte værktøjer som FileZilla og
+                    Visual Studio Code, at kende for at kunne løse opgaven. Opgaven bestod i at lave en hjemmeside, der
+                    handlede om computere som vi skulle lave ud fra uddelte wireframes og layoutdiagrammer samt billeder
+                    og tilhørende tekst.
+                </p>
+            </div>
+        </div>
+
+        <h2>Processen</h2>
+        <section class="grid_1-1-1">
+
+            <div class="flex_col">
+                <div><img src="img/webp/02/html.webp" alt="html"></div>
+                <div>
+                    <h2>layoutdiagram og wireframes</h2>
+                    <p>
+                        Til kodning brugte jeg HTML og CSS til at fastsætte henholdsvis indholdet og opstilling på
+                        siden. Opstilling var på forhånd angivet i form af wireframes og vi havde også fået udleveret
+                        layoutdiagram til hjælp med opsætning. På wireframes kunne jeg se hvordan siden skulle se ud på
+                        mobil, hvilket vi af kodningsprincip skulle starte med at kode og så hvordan det skulle se ud på
+                        desktop. Ved hjælp af layoutdiagrammet vidste jeg, hvor der skulle tilføjes classes i
+                        html/markupsproget, hvilket var en stor hjælp til CSS-delen.
+                    </p>
+                </div>
+                <div><img src="img/webp/02/css.webp" alt="css"></div>
+            </div>
+
+            <div class="flex_col">
+
+                <div><img src="img/webp/02/filezilla.webp" alt="filezilla"></div>
+
+                <div>
+                    <h2>Flex og mediaqueries</h2>
+                    <p> Til CSS-delen anvendte vi både grid, flex og mediaqueries, hvoraf mediaqueries bidrager til et
+                        fleksibelt design så websiden både ser æstetisk ud på stort og småt format. Siden jeg kodede
+                        Mobile First sørgede jeg først for siden visuelt så godt ud på mobil, hvorefter jeg anvendte
+                        mediaqueries til at angive, hvordan siden skulle se ud på desktop, det var her classes var
+                        gavnlige. Til hjemmesiden anvendte jeg både flex som handler om at opsætte indhold efter
+                        kolonner eller rækker, hvor der så er meget frihed om opstillingen i dem. Dette anvendte jeg fx
+                        til at noget indhold som blev fremstiller lodret på mobil blev ændret til vandret på desktop.
+                        Her anvendte jeg classes til at angive hvilket indhold der skulle manipuleres med samt hvilket
+                        indhold der hørte sammen. </p>
+
+                </div>
+                <div class="1-billede"><img src="img/webp/02/komponenter.webp" alt="screenshot"></div>
+            </div>
+
+            <div class="flex_col">
+                <div class="4-billede"><img src="img/webp/02/kodecss.webp" alt="kodecss"></div>
+                <div>
+                    <h2>Grid</h2>
+                    <p>Til min hjemmeside anvendte jeg også grid, som ikke arbejder enten vertikalt eller horisontalt
+                        men begge dele som en tabel. Her er fordelen at man kan arbejde på begge led, hvis
+                        størrelsesforholdene på indholdet passer godt sammen. Til gengæld er grid mindre fleksibel at
+                        arbejde, da rækker og kolonner har samme egenskaber hele vejen igennem (fx kan man ikke med grid
+                        sige columns er 1fr:1fr:1fr i første række, men 3fr:2fr i næste række). Jeg anvendte på min
+                        hjemmeside grid til mit galleri, hvor der skulle placeres en masse billeder ved siden af
+                        hinanden i et stort kvadrat. </p>
+                </div>
+                <div class="3-billede"><img src="img/webp/02/kodehtml.webp" alt="kodehtml"></div>
+            </div>
+
+        </section>
+    </main>
+    <a href="https://dopedesign.dk/kea/02_web/01_website/indhold/index.html">se kodet site</a>
+    <script src="burger.js"></script>
+</body>
+
+</html>

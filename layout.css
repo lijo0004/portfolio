@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  font-size: 3vw;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2vw;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  font-family: "Fira Sans", sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 1vw;
+  font-style: italic;
+  font-weight: 200;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+p {
+  font-size: 1vw;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  padding-left: 60px;
+}
+
+body {
+  background-color: #d2e5e5;
+}
+
+/***
+body {
+  background-color: #c3e6e9;
+  #bcd9db
+}
+
+/*****************02 web**************/
+
+@media only screen and (min-width: 800px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .flex_col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex_col > :last-child {
+    margin-top: auto;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .left-right {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .right,
+  .left {
+    flex: 1;
+    max-width: 50%; /* Each takes up half of the screen */
+  }
+
+  .right {
+    order: 2; /* Set the order to 2, making it appear on the right */
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .reverse-left-right {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .reverse-right,
+  .reverse-left {
+    flex: 1;
+    max-width: 50%; /* Each takes up half of the screen */
+  }
+
+  .reverse-right {
+    order: 2; /* Set the order to 2, making it appear on the right */
+  }
+}

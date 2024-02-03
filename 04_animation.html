@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <meta name="robots" content="no Index">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="04_animation.css">
+    <link rel="stylesheet" href="02_web.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Playfair+Display&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c5d83fc88a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <div class="logo-container">
+            <a href="index.html"><img src="img/svg/SVG/SVG/icon_hvid.svg" alt="mit Logo" class="logo"></a>
+        </div>
+        <a href="om_mig.html">Om mig</a>
+        <a href="02_web.html">Grundlæggende Web</a>
+        <a href="03_uxui.html">Cremekrukken</a>
+        <a href="04_animation.html">Animation</a>
+        <a href="05_indhold.html">Pleasant</a>
+    </div>
+    <main>
+
+        <div class="background_img_04">
+            <h1>Den fortryllede skov</h1>
+        </div>
+
+
+        <div class="left-right">
+            <div class="left">
+                <h2>Formål</h2>
+                <p>Formålet med forløbet var at blive bekendt med CSS animationer hvor man kan få ting til at bevæge sig
+                    med
+                    brug af CSS samt grundlæggende JavaScript, som giver mulighed for at ændre et ellers statisk indhold
+                    af i
+                    HTML i retning af et dynamisk HTML, hvor classes kan tilføjes/fjernes mm. Dette gjorde vi ved at
+                    lave et
+                    simpelt spil. Idéen til spillet samt designet af figurer, baggrunde og ui-elementer skulle vi selv
+                    finde på
+                    og tegne i Adobe Illustrator. Kodningen skulle tage udgangspunkt i et statemachinediagram og
+                    aktivitetsdiagram.</p>
+                <h2>Idégenerering</h2>
+                <p>Til hjælp med generering af idéer til spillet lavede vi en øvelse med en masse ord fordelt på tre
+                    kolonner, hvor vi tegnede tilfældige streger mellem ord på tværs af kolonnerne og beskrev en idé for
+                    spil ud fra dem. Det, at jeg kom væk fra at tænke på, at jeg skulle lave en god idé, men i stedet
+                    var tvunget til at komme på småskøre idéer var befriende og jeg kom hurtigt på min første idé til et
+                    spil ’Drowsy dragons den’.</p>
+
+            </div>
+            <img src="/img/04_animation/Webp/dragoneye.webp" alt="skitse_1" class="right">
+        </div>
+
+        <div class="left-right">
+            <img src="/img/04_animation/Webp/prototype.webp" alt="parpir prototype" class="left">
+            <div class="right">
+                <h2>Første idé</h2>
+                <p>Idéen med spillet er, at du er en adventurer, der møder en tyv, som beder dig hjælp til at indsamle
+                    penge til deres syge mor. I en dragehule skal du samle mønter uden at vække drageungen, der sover.
+                    Klik på mønterne og undgå klokkerne for at forblive lydløs, men du skal skynde dig inden
+                    dragemoderen kommer hjem. Det er tiltænkt, at tyven vil snyde dig enten ved at få dig til at røve en
+                    dragefamilie og risikere ’livet’ idet tyven alligevel stikker af, hvis man vækker dragen eller
+                    dragemoderen når hjem inden man når at indsamle nok mønter. Jeg ønskede kontrast mellem stilen, når
+                    spillet starter og selve spillet, hvor stilen der er farverig med et babybias karakterdesign. Tyvens
+                    mistænkelige side reflekteres i teksten og afspejles i spillets "vinder" eller "taber" slutskærme.
+                    Se kontrast mellem skitsen af slutskærmmen, når man taber og prototypen.</p>
+                <h2>prototypen</h2>
+                <p>Til hjælp med visualisering af hvordan spillet ser ud når man spiller det, lavede jeg en
+                    papir-prototype, hvor jeg tog billeder der illustrerede, hvordan spillet skulle se ud når man
+                    klikkede på diverse elementer. </p>
+            </div>
+        </div>
+
+        <img class="pad" src="img/04_animation/Webp/aktivitetdiagram.drawio.webp" alt="aktivitetsdiagram">
+        <h2>Aktivitetdiagram</h2>
+        <p>For bedre at forstå flowet af spillet og visualisere ikke kun hvordan spillet ser ud når det spilles som det
+            fremgår af prototypen, men også hvordan spillet fungerer lavede jeg et tilhørende aktivitetsdiagram. Der var
+            en række krav til hvordan spillet skulle fungere såsom at spillet skulle bestå af en baggrund og
+            UI-elementer skulle der være bevægelige spil elementer man kan klikke på som enten gjorde noget godt eller
+            skidt. Hvis man klikkede på noget ’godt’ fik man point som man kunne se på UI-elementet ’point’, hvis man
+            klikkede på noget skidt kunne det ses på ui-elementet ’liv’. Derudover var der tid på spillet som afgjorde
+            hvornår spillet stoppede. Når spillet stoppede, kunne man enten vinde eller tabe, hvis man løb tør for liv
+            tabte man eller hvis man ikke havde indsamlet nok point når spillet stoppede ellers vandt man spillet. Til
+            min idé blev liv illustreret med ’Z’ symboler for at indikere, at babydragen stadig sov, antal point blev
+            illustreret med hvor fuld pengeposen så ud og tiden blev illustreret med en måne der gradvist blev lys som
+            en sol når det nærmede sig morgen og babydragen ville vågne. Jeg tegnede mit statemachinediagram i
+            VisualStudio Code i en Draw.io fil.</p>
+
+        <!-- Sprite Section -->
+        <div class="sprite">
+            <div class="pattern-background"></div>
+            <!-- SVG line divider pattern -->
+        </div>
+
+
+        <h2>Tekniske Problemer</h2>
+        <div class="left-right">
+            <img src="img/04_animation/Webp/skov_m_effekter_distort.webp" alt="distort skov" class="left">
+            <p class="text_allign_right right">Jeg kom hurtigt, i mit arbejde med illustrator, frem til at det var meget
+                udfordrende at tegne med former. Det bør her nævnes at jeg først da projektet næsten var ovre opdagede
+                at man med pentool'et kan tilføje anchor-points, som gør det nemmere at manipulere formerne.</p>
+        </div>
+
+
+        <div class="left-right">
+            <div class="left">
+                <h2>Killing my darling</h2>
+                <p>Jeg måtte efterhånden erkende at min originale idé med dragen var for udfordrende at lave i
+                    illustrator for en begynder. Så jeg gik i gang med en ny idé, hvor jeg testede nogle særlige
+                    funktioner som distort af til hjælp.</p>
+            </div>
+            <img src="img/04_animation/Webp/ny_ide.webp" alt="ny_skitse" class="right pad">
+
+        </div>
+
+        <!-- AI til undsætning -->
+        <div class="sprite">
+            <div class="pattern-background"></div>
+            <!-- SVG line divider pattern -->
+        </div>
+
+        <h2>AI til undsætning</h2>
+        <div class="float">
+            <p class="text">På trods af mit nyere mere simple koncept var jeg stadig udfordret. Min skov kunne ikke
+                konverteres korrekt netop grundet de effekter jeg havde anvendt. Heldigvis opdagede jeg at illustrator
+                have en funktion der kunne genere AI-billeder.</p>
+            <div class="float-right">
+                <!-- AI Skov Images -->
+                <img src="img/04_animation/Webp/ai_skov_1.webp" alt="ai skov 1">
+                <img src="img/04_animation/Webp/ai_skov_2.webp" alt="ai skov 2">
+                <img src="img/04_animation/Webp/ai_skov_3.webp" alt="ai skov 3">
+                <img src="img/04_animation/Webp/ai_skov_4.webp" alt="ai skov 4">
+                <img src="img/04_animation/Webp/ai_skov_5.webp" alt="ai skov 5">
+                <img src="img/04_animation/Webp/ai_skov_6.webp" alt="ai skov 6">
+            </div>
+        </div>
+
+        <div class="left-right">
+            <img src="/img/04_animation/Webp/farvejustering.webp" class="left" alt="farvejustering">
+            <div class="right">
+                <h2>farvejusteringer</h2>
+                <p>Så jeg gik i gang med at lave mange AI-billeder for at finde noget jeg kunne bruge.
+                    Herefter justerede jeg på billederne fx ved at tilføje flere træer, fjerne uønskede elementer og
+                    justere
+                    på farverne. Nedenfor er der flere eksempler på hvad jeg kom frem til med min justeringer.</p>
+            </div>
+        </div>
+
+        <div class="makeover">
+            <img src="img/04_animation/Webp/ai_skov_3.webp" alt="ai_skov" class="before">
+            <img src="img/svg/SVG/SVG/pil.svg" alt="Pil" class="pil">
+            <img src="img/04_animation/Webp/ai_skov_red.webp" alt="ai_skov_lose" class="after">
+        </div>
+        <div class="makeover">
+            <img src="img/04_animation/Webp/glad_ildflue.webp" alt="glad_ildflue" class="before">
+            <img src="img/svg/SVG/SVG/pil.svg" alt="Pil" class="pil">
+            <img src="img/04_animation/Webp/sur_ildflue.webp" alt="sur_ildflue" class="after">
+        </div>
+        <div class="center">
+            <div class="makeover">
+                <img src="img/04_animation/Webp/light_lantern.webp" alt="light_lantern" class="before tall">
+                <img src="img/svg/SVG/SVG/pil.svg" alt="Pil" class="pil">
+                <img src="img/04_animation/Webp/dark_lanterne.webp" alt="dark_lanterne" class="after tall">
+            </div>
+        </div>
+
+        <h2>Slutresultater</h2>
+        <img src="img/04_animation/Webp/State_machine-diagram_2px_luft.webp" alt="Statemachinediagram">
+        <h3>Prøv spillet</h3>
+        <img src="img/04_animation/Webp/startskærm.webp" alt="start" class="middle">
+
+
+    </main>
+    <a href="https://dopedesign.dk/kea/04_animation/website/index.html">Prøv spilet</a>
+</body>
+
+</html>
