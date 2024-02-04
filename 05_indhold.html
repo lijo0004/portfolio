@@ -7,9 +7,10 @@
     <title>Video og firmaforløb</title>
     <meta name="robots" content="no Index">
     <link rel="stylesheet" href="04_animation.css">
-    <link rel="stylesheet" href="05_indhold.css">
-    <link rel="stylesheet" href="02_web.css">
+    <link rel="stylesheet" href="_05_indhold.css">
+    <link rel="stylesheet" href="_02_web.css">
     <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="burger.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Playfair+Display&family=Roboto&display=swap"
@@ -20,90 +21,95 @@
 </head>
 
 <body>
-    <div class="topnav" id="myTopnav">
+    <nav>
         <div class="logo-container">
             <a href="index.html"><img src="img/svg/SVG/SVG/icon_hvid.svg" alt="mit Logo" class="logo"></a>
         </div>
-        <a href="om_mig.html">Om mig</a>
-        <a href="02_web.html">Grundlæggende Web</a>
-        <a href="03_uxui.html">Cremekrukken</a>
-        <a href="04_animation.html">Animation</a>
-        <a href="05_indhold.html">Pleasant</a>
-    </div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="om_mig.html">Om mig</a></li>
+            <li><a href="02_web.html">Grundlæggende Web</a></li>
+            <li><a href="03_uxui.html">Cremekrukken</a></li>
+            <li><a href="04_animation.html">Animation</a></li>
+            <li><a class="active" href="05_indhold.html">Pleasant</a></li>
+            <li class="closeMenu"><i class="fa fa-times"></i></li>
+        </ul>
+    </nav>
     <main>
 
         <img src="img/05_pleasant/webp/pleasant_logo.webp" alt="pleasant" class="pleasant">
 
         <div class="left-right">
             <img src="img/05_pleasant/webp/05_pleasant_set_udefra.webp" alt="pleasant butik set udefra" class="left">
-            <p class="right">Pleasant er et tøjmærke der har fokus på bæredygtighed så man kan købe tøj med god
-                samvitighed.</p>
+            <div class="right">
+                <h2>Formål</h2>
+                <p>I anden del af forløbet havde vi et gruppeprojekt med en mere kundeorienteret vinkel på design i
+                    modsætning til tredje forløb, hvor vi selv var ejerne af produktet, var der i denne sammenhæng en
+                    virksomhed, der også skulle tages med i overvejelserne. Til selve opgaven skulle vi finde en
+                    virksomhed, som vi skulle filme og lave en website til. Vi arbejdede meget med de samme metoder, som
+                    i tema tre, men vi blev også introduceret til nye metoder som BERT (Bipolar Emotionel Respons Test),
+                    heuristisk test, SCRUM, USP (Unique Selling Point). Derudover arbejdede vi også med nye værktøjer
+                    som Netlify, GitHub og Trello. Vi fik lov at filme hos virksomheden Pleasant og lavede et re-design
+                    af deres hjemmeside, da de allerede havde en hjemmeside.</p>
+            </div>
         </div>
 
 
-
-        <h2>Pleasants Hjemmeside</h2>
         <div class="left-right">
-            <img src="img/05_pleasant/webp/05_pleasant_sitemap.webp" alt="sitemap" class="left pad">
-            <img src="img/05_pleasant/webp/05_pleasant_styletile_nu.webp" alt="styletile" class="right pad">
+            <div class="left">
+                <h2>Om Pleasant</h2>
+                <p>Til at starte med undersøgte vi virksomheden grundigt og kom hurtigt frem til at deres USP var meget
+                    relevant for hjemmesiden, da de havde et enormt fokus på bæredygtighed. Dog opdagede vi, da vi
+                    lavede 5-sek og tænkt-højt test på virksomheden, at det ikke fremgik så tydeligt. Vi brugte også
+                    BERT test til at hjælpe os med at danne et indtryk af brugernes holdning til deres hjemmeside, men
+                    da vi lavede de samme test senere, kunne vi desværre ikke så godt sammenligne BERT testen til noget
+                    brugbart, da vi kun havde fået fem besvarelser i anden omgang til sammenligning med de 20
+                    besvarelser vi fik i første omgang. Ud over disse lavede vi også et sitemap og en styletile for
+                    siden for at illustrere deres stilvalg.</p>
+            </div>
+            <img src="img/05_pleasant/webp/05_pleasant_styletile_redesign.webp" alt="styletile re-designet"
+                class="right pad">
         </div>
 
-        <div class="sprite">
-            <div class="pattern-background"></div>
-            <!-- SVG line divider pattern -->
-        </div>
+        <img src="img/05_pleasant/webp/trelloboard.webp" alt="Trelloboard">
 
-        <h2>Tests</h2>
-        <h3>BERT</h3>
+        <h2>Projektstyring og problematikker</h2>
+        <p>Til dette projekt arbejde vi i gruppe med SCRUM metoden, vi brugte her Trello, hvor vi inddelte vores
+            arbejdsopgaver i tre kategorier: to do, doing og done. For mig gav det overskuelighed, at vi havde en liste
+            med opgaver, der skulle laves samt et overblik over hvor langt vi var. Til gengæld burde vi til en anden
+            gang have begyndt på en tidsplan tidligere i forløbet. Vi startede med at snakke meget sammen og arbejde
+            sammen i starten af forløbet og begyndte først for sent at arbejde med ting individuelt. Et andet problem
+            ved dette var, at da vi nærmede os slutningen af forløbet havde vi travlt, hvilket uhensigtsmæssigt ledte os
+            til at kommunikere mindre. Vi endte med at undervurdere hvor lang tid selve designdelen og kodningen ville
+            tage og havde en uheldig oplevelse af at en styletile kan tolkes meget forskelligt. Generelt set skulle vi
+            have sat mere tid af til idégenerering og designdelen, vi havde ikke rigtigt taget højde for, at den del
+            tager længere tid, når man er flere der ikke blot skal være enige men også fortolke stilvalg på samme måde.
+            Vi endte med nogle kodede sider, der stak lidt i hver sin retning, men vi justerede lidt på dem så de kom
+            til at passe bedre sammen. En anden tidsrøver vi havde var GitHub, af en eller anden grund endte vi med at
+            have to master-branches. Dette lavede en del ravage i vores layout, så det var mange ting vi endte med at
+            skulle kode om eller kode igen, fordi noget kode pludselig forsvandt. Nedenfor Kan i se siderne vi kom frem
+            til på GitHub. </p>
 
-
-
-        <div class="scroll">
-            <!-- AI Skov Images -->
-            <img src="img/05_pleasant/webp/BERT_dyr-billig.webp" alt="gammel1">
-            <img src="img/05_pleasant/webp/fem.webp" alt="gammel2">
-            <img src="img/05_pleasant/webp/varm.webp" alt="gammel3">
-            <img src="img/05_pleasant/webp/billig.webp" alt="ny1">
-            <img src="img/05_pleasant/webp/nyfem.webp" alt="ny2">
-            <img src="img/05_pleasant/webp/varmny.webp" alt="ny3">
-        </div>
-
-        <p>Alt i alt hælder testpersonerne til siden er tiltalende, harmonisk, overvejende autentisk, professionel,
-            moderne, interessant og varm, samt overvejende feminin, stolt, unikt og dyr.</p>
-        <h3>Tænke-højt og 5-sek test</h3>
-        <p>Til vores 5-sekunders test var vores testperson inde på forsiden, hvor der er en video i toppen. Hun
-            så nemt at det var en tøjforretning og mente at den så alvorlig ud. Hun bemærkede ikke at
-            hjemmesiden specifikt solgte bæredygtigt tøj, og man kan diskutere om et alvorligt indtryk er
-            gavnligt eller ej. På den ene side er et alvorligt indtryk godt hvis man skal virke troværdig indenfor
-            et alvorligt emne som bæredygtighed, men det indtryk stemmer ikke helt overens med den lidt
-            lettere stemning som ejerne gav udtryk for at de ønskede.</p>
-        <p class="pad">Til tænk højt siden gik det op for vores testperson at det var et tøjmærke der havde fokus på
-            bæredygtighed. Hun sagde det var lidt ærgerligt at hun ikke så det i femsekunders testen. Hun
-            pointerede at hjemmesiden fremstod moderne hvilket stemte overens med vores resultater fra
-            BERT-testen. Hun syntes at det skulle fremgå mere tydeligt, at der var tale om et bæredygtigt
-
-            tøjmærke. Hun mente at fonten og de bølgede linjer gjorde at hjemmesiden fremstod lidt hipster-
-            agtigt og ungdommeligt. Hun forklarede at hun selv var mere til et klassisk design, hvilket kan være
-
-            svært at udlede noget reelt fra med blot en enkelt testperson.</p>
-
-
-        <div class="sprite">
-            <div class="pattern-background"></div>
-            <!-- SVG line divider pattern -->
-        </div>
-
-
-        <h2>idé</h2>
         <div class="makeover">
-            <img src="img/05_pleasant/webp/05_pleasant_moodboard_redesign.webp" alt="moodboard" class="before">
+            <img src="img/05_pleasant/webp/valuesbefore.webp" alt="values before" class="before">
             <img src="img/svg/SVG/SVG/pil.svg" alt="pil" class="pil">
-            <img src="img/05_pleasant/webp/05_pleasant_styletile_redesign.webp" alt="styletile" class="after">
+            <img src="img/05_pleasant/webp/valuesefter.webp" alt="values after" class="after">
         </div>
-        <p>Selvom vi alle var blevet enige om hvordan styletilen skulle se ud betød det ikke at vi fortolkede den ens.
-        </p>
 
-        <h2>Forskellige fortolkninger</h2>
+
+        <div class="left-right">
+
+            <img src="img/05_pleasant/webp/05_pleasant_styletile_nu.webp" alt="styletile" class="left pad">
+            <div class="right">
+                <h2>Pecha Kucha</h2>
+                <p>Efter min noget skæve præsentation i Figma i forløb tre var det rart at lære Google Slides at kende.
+                    Jeg havde altid troet det ville være sværere at bruge, men jeg er glad for at jeg nu har et nyt
+                    redskab i mit bælte og jeg ved nu det er langt sværere at forsøge at lave slides i Figma. Jeg troede
+                    først, at det kun ville gøre det sværere at præsentere når der kun var 20 sekunder pr. slide, men
+                    det hjalp med at sikre at der ikke var nogen der talte for længe og der derfor ikke var nogle
+                    vigtige pointer eller nogen slides vi blev nødt til at skippe.</p>
+            </div>
+        </div>
         <div class="scroll">
             <!-- AI Skov Images -->
             <img src="img/05_pleasant/webp/shop.webp" alt="shop">
@@ -113,55 +119,78 @@
 
         </div>
 
+        <a href="https://docs.google.com/presentation/d/1_BpogVKJYWVRVdahPUkEc5TDTiISmACZz79kRidloic/edit">se vores
+            præsentation</a>
+        <a href="">Se processdokumentation</a>
+        <a href="">se Video</a>
 
-        <h3>Videostil vs Styletile</h3>
-        <div class="left-right">
-            <img src="img/05_pleasant/webp/05_pleasant_styletile_redesign.webp" alt="styletile" class="left">
-            <img src="img/05_pleasant/webp/videostil_redesign.webp" alt="vores videostil" class="right">
+
+        <!-- Sprite Section -->
+        <div class="sprite">
+            <div class="pattern-background"></div>
+            <!-- SVG line divider pattern -->
         </div>
-        <p>Efter vi så hinandens redeigne på baggrund af styletilen talte vi også om at vi måske skulle have afstemt
-            stilen for siden med videostilen. Vi besluttede at rette lidt til så siderne mindede mere om hinanden og gav
-            det et mere simpelt og stilrent udtryk så det ikke gik så meget i kambolage med videostilen. </p>
-        <div class="makeover">
-            <img src="img/05_pleasant/webp/valuesbefore.webp" alt="values before" class="before">
-            <img src="img/svg/SVG/SVG/pil.svg" alt="pil" class="pil">
-            <img src="img/05_pleasant/webp/valuesefter.webp" alt="values after" class="after">
-        </div>
-
-
-        <h2>Videoen</h2>
-
-        <div class="left-right">
-            <img src="img/05_pleasant/webp/videostil_nu.webp" alt="deres videostil" class="left">
-            <img src="img/05_pleasant/webp/videostil_redesign.webp" alt="RE-design videostil" class="right">
-        </div>
-        <p>Vi ville overordnet godt kører i lidt samme videostil som de allerede gjorde da vi under interviewet blev
-            informeret om at de fortrak mere afslappede og autentiske intervies og det passede godt med den videostil de
-            allerede brugte.
-        </p>
-        <div class="iframe-wrapper">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/s2HgdR51fQc?si=dwOK1Q2glmxfXj69"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </div>
-
-        <h2>Tidliggere erfaringer</h2>
         <video controls src="https://dopedesign.dk/kea/05_indhold/passionvideo/eyetracking.mp4"></video>
-        <div class="iframe-wrapper">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/qGjzMAt7b0A?si=6IZp32EnbX0pEDzy"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+
+
+        <a href="https://dopedesign.dk/kea/05_indhold/Passionsite/index.html">se min videoside</a>
+
+        <div class="left-right">
+            <div class="left">
+                <h2>Formålet</h2>
+                <p>
+                    Til første del af forløbet lærte vi om filmiske virkemidler og principper, da vi skulle lave en
+                    1-minuts video om en person med en hobby. Vi fik lov at filme Simon fra Tech-Lab som fortalte om
+                    eye-tracking. Jeg interviewede ham.
+                </p>
+                <h2>Klipning</h2>
+                <p>Til selve klipningen af videoen startede jeg med at synkronisere lydfilen og masterrollen ud fra
+                    Simons klap i optagelserne. Det var en lang video (11 min) som skulle redigeres ned til 1 minut. Jeg
+                    ville godt have, at videoen gav mening, så det ikke bare var en tangent som videoen handlede om, men
+                    at man kom bredt om emnet eye-tracking ligesom Simon kom omkring emnet da vi filmede. Jeg startede
+                    derfor med at notere, hvad han sagde i lydfilen, for derefter at overstrege, hvad jeg umiddelbart
+                    syntes han skulle snakke om. Det vidste sig, at der var nogle lydklip som ikke kunne klippes sammen
+                    som jeg ønskede, så jeg prøvede mig lidt frem indtil jeg fandt frem til en 1 minuts video med
+                    lydklip, som jeg synes fungerede. Efter jeg havde tænkt historien kiggede jeg vores b-roll igennem
+                    for at se hvilke klip, der ville give mening. Efter jeg var begyndt at redigere, fandt jeg hurtigt
+                    ud af at man skal bruge ret meget b-roll for at lave en 1 minuts video, hvor en persons snak er
+                    interessant at se på. Dette var en vigtig erfaring jeg tog med mig til filmningen vi skulle lave med
+                    Pleasant. </p>
+            </div>
+            <img src="img/05_pleasant/webp/farveredigering.webp" alt="colorcorrect premiere-pro" class="right pad">
         </div>
-        <p>Til filmningen hos pleasant tog vi alle nogle erfaringer med os, jeg erfarede at eksternt lys ville give os
-            mere frihed med videoredigering, at en interviewguide ville være nyttig. Derudover var vi alle enige om at
-            man ikke kunne få for meget b-roll eller kameravinkler da det ellers kan være svært at få en medrivende
-            video.</p>
-    </main>
-    <a href="https://docs.google.com/presentation/d/1_BpogVKJYWVRVdahPUkEc5TDTiISmACZz79kRidloic/edit">se vores
-        præsentation</a>
-    <a href="https://dopedesign.dk/kea/05_indhold/Passionsite/index.html">se min videoside</a>
+
+        <div class="left-right">
+            <img src="img/05_pleasant/webp/farveredigering.webp" alt="colorcorrect premiere-pro efter" class="left">
+            <div class="right">
+                <h2>colorcorrectting</h2>
+                <p>Ud over at klippe video og lyd sammen lavede jeg også color correction på videoen. Overordnet set,
+                    var de videoklip vi havde taget ude foran bygningen og af skærmene generelt klarere, hvorimod den
+                    video vi havde af Simon generelt var noget gul og havde dæmpet og egentlig lidt dårligt belysning
+                    (endnu en erfaring jeg tog med mig til filmningen hos Pleasant). Color correcting syntes jeg var
+                    langt mere udfordrende end at klippe video og lyd, fordi jeg syntes det var langt nemmere at høre og
+                    se om jeg havde klippet noget forkert når der var tale om lyd og video. Til farveredigering var det
+                    derimod ikke helt tydeligt for mig hvordan jeg skulle justere i farven. Jeg syntes det var svært at
+                    vurdere om farven skulle gøre varmere (gul) eller koldere (blå) eller om den skulle være mere
+                    magenta eller grøn. Jeg kunne godt se, hvad jeg var utilfreds med, men jeg havde svært ved at
+                    oversætte det til hvad der konkret skulle rettes i. Det jeg så til sidst kom frem til, var at hvis
+                    jeg først prøvede at redigere i belysningen før jeg rettede i farven, blev det nemmere for mig at se
+                    hvad problemet med farverne var, når farven var det isolerede problem fremfor tonen også. </p>
+            </div>
+        </div>
+
+        <div class="left-right">
+            <div class="left">
+                <h2>MUSIK</h2>
+                <p>
+                    musik valg......................................
+                </p>
+                <h2>COLOR HHHHHH</h2>
+                <p>Til selve.......................................</p>
+            </div>
+            <img src="img/05_pleasant/webp/farveredigering.webp" alt="colorcorrect premiere-pro" class="right pad">
+        </div>
+        <script src="burger.js"></script>
 </body>
 
 </html>

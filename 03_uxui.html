@@ -17,16 +17,21 @@
 </head>
 
 <body>
-    <div class="topnav" id="myTopnav">
+    <nav>
         <div class="logo-container">
             <a href="index.html"><img src="img/svg/SVG/SVG/icon_hvid.svg" alt="mit Logo" class="logo"></a>
         </div>
-        <a href="om_mig.html">Om mig</a>
-        <a href="02_web.html">Grundlæggende Web</a>
-        <a href="03_uxui.html">Cremekrukken</a>
-        <a href="04_animation.html">Animation</a>
-        <a href="05_indhold.html">Pleasant</a>
-    </div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="om_mig.html">Om mig</a></li>
+            <li><a href="02_web.html">Grundlæggende Web</a></li>
+            <li><a class="active" href="03_uxui.html">Cremekrukken</a></li>
+            <li><a href="04_animation.html">Animation</a></li>
+            <li><a href="05_indhold.html">Pleasant</a></li>
+            <li class="closeMenu"><i class="fa fa-times"></i></li>
+        </ul>
+    </nav>
+
     <main>
         <h1>Bag om Cremekrukken</h1>
 
@@ -165,31 +170,36 @@
 
 
         <h2>Præsentation</h2>
-        <div class="float">
-            <div class="text">
+        <div class="left-right">
+            <div class="left">
                 <h3>Process</h3>
                 <p>Jeg lavede først en tekst for præsentationen så jeg havde et overblik over hvor mange ord det fyldte
                     samt hvilken rækkefølge jeg ville tale om. Så læste jeg det igennem igen efter jeg havde printet det
                     ud og lavede kommentarer til mig selv. Til sidst lavede jeg det om til stikord som jeg øvede mig ud
-                    fra.
+                    fra. (Til højre set et slide fra mit TIDLIGGERE slideshow).
+                </p>
+                <h2>Refleksion</h2>
+                <p>
+                    Fremover vil jeg straks fotografere mine sketches for at undgå at miste mit storyboard. Under
+                    oprettelsen af
+                    styletile vil jeg integrere farvetjek i Lighthouse-siden som en velovervejet del af designprocessen.
+                    Efter
+                    pitchen vil jeg følge anbefalingen om at bruge PowerPoint eller Google Slides til mine slides og
+                    forbedre
+                    tidsfordelingen. Kodningsmæssigt burde jeg have startet med at gøre siderne visuelt tiltalende før
+                    integration af diverse funktioner. Jeg vil stræbe mig på at dokumentere fejl i kodning med
+                    screnshots
+                    undervejs.
                 </p>
             </div>
+            <img src="img/03_cremekrukken/webp/slide8.webp" alt="slide fra slideshow" class="right">
+        </div>
 
 
-            <h2>Refleksion</h2>
-            <p>
-                Fremover vil jeg straks fotografere mine sketches for at undgå at miste mit storyboard. Under
-                oprettelsen af
-                styletile vil jeg integrere farvetjek i Lighthouse-siden som en velovervejet del af designprocessen.
-                Efter
-                pitchen vil jeg følge anbefalingen om at bruge PowerPoint eller Google Slides til mine slides og
-                forbedre
-                tidsfordelingen. Kodningsmæssigt burde jeg have startet med at gøre siderne visuelt tiltalende før
-                integration af diverse funktioner. Jeg vil stræbe mig på at dokumentere fejl i kodning med screnshots
-                undervejs.
-            </p>
-            <a href="https://dopedesign.dk/kea/03_ux/01_kodet_site/index.html">Se kodet site</a>
-            <a href="">Se PowerPoint</a>
+
+        <a href="https://dopedesign.dk/kea/03_ux/01_kodet_site/index.html">Se kodet site</a>
+        <a href="">Se PowerPoint</a>
+        <a href="">se figma præsentation</a>
 
 
 
@@ -203,7 +213,7 @@
     </main>
 
 
-
+    <script src="burger.js"></script>
 </body>
 
 </html>

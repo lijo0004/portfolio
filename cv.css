@@ -20,20 +20,32 @@ main {
   margin: 0 auto 0 auto;
 }
 
-.cv-container {
+@media only screen and (min-width: 701px) {
+  .cv-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .left-section {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .right-section {
+    flex: 3;
+    padding: 20px;
+  }
+}
+
+.project-container {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
 }
 
-.left-section {
-  flex: 1;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.right-section {
-  flex: 3;
-  padding: 20px;
+.project {
+  flex: 1 0 45%; /* Adjust as needed */
+  margin: 10px;
 }
 
 .profile img {
@@ -48,16 +60,6 @@ main {
 .education h2,
 .projects h2 {
   margin-bottom: 10px;
-}
-
-.project-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.project {
-  flex: 1 0 45%; /* Adjust as needed */
-  margin: 10px;
 }
 
 .project img {

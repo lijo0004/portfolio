@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om mig</title>
+    <title>Forside</title>
     <meta name="robots" content="no Index">
-    <link rel="stylesheet" href="cv.css">
-    <link rel="stylesheet" href="02_web.css">
     <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="burger.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Playfair+Display&family=Roboto&display=swap"
@@ -19,18 +18,25 @@
 
 
 <body>
-    <div class="topnav" id="myTopnav">
+    <nav>
         <div class="logo-container">
-            <a href="index.html"><img src="img/svg/SVG/SVG/icon_hvid.svg" alt="mit Logo" class="logo"></a>
+            <a href="index.html" class="active"><img src="img/svg/SVG/SVG/icon_hvid.svg" alt="mit Logo"
+                    class="logo"></a>
         </div>
-        <a href="om_mig.html">Om mig</a>
-        <a href="02_web.html">Grundlæggende Web</a>
-        <a href="03_uxui.html">Cremekrukken</a>
-        <a href="04_animation.html">Animation</a>
-        <a href="05_indhold.html">Pleasant</a>
-    </div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="om_mig.html">Om mig</a></li>
+            <li><a href="02_web.html">Grundlæggende Web</a></li>
+            <li><a href="03_uxui.html">Cremekrukken</a></li>
+            <li><a href="04_animation.html">Animation</a></li>
+            <li><a href="05_indhold.html">Pleasant</a></li>
+            <li class="closeMenu"><i class="fa fa-times"></i></li>
+        </ul>
+    </nav>
+    <main>
 
-    <img src="img/webp/1x/sketchbook.webp" alt="sketchbook">
+        <img src="img/webp/1x/sketchbook.webp" alt="sketchbook">
+        <script src="burger.js"></script>
 </body>
 
 </html>
