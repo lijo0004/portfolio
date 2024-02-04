@@ -10,6 +10,37 @@ img {
   display: block;
 }
 
+.sprite_container {
+  padding-top: 15vh; /* Adjust the top padding as needed */
+  padding-bottom: 15vh; /* Adjust the bottom padding as needed */
+  overflow: hidden;
+}
+
+.pattern-background {
+  width: 100%;
+  height: 10vw; /* Adjusted to a percentage of the viewport width */
+  background: url("img/svg/SVG/fullcurve.svg");
+  background-repeat: repeat-x; /* Ensure the pattern repeats along the x-axis */
+  background-size: auto 100%; /* Adjusted to auto for the x-axis and 100% for the y-axis */
+}
+
+@media only screen and (min-width: 701px) {
+  .left-right {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .right,
+  .left {
+    flex: 1;
+    max-width: 50%; /* Each takes up half of the screen */
+  }
+
+  .right {
+    order: 2; /* Set the order to 2, making it appear on the right */
+  }
+}
+
 /*****************02 web**************/
 
 @media only screen and (min-width: 800px) {
@@ -30,23 +61,6 @@ img {
 }
 
 @media only screen and (min-width: 701px) {
-  .left-right {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .right,
-  .left {
-    flex: 1;
-    max-width: 50%; /* Each takes up half of the screen */
-  }
-
-  .right {
-    order: 2; /* Set the order to 2, making it appear on the right */
-  }
-}
-
-@media only screen and (min-width: 701px) {
   .reverse-left-right {
     display: flex;
     flex-direction: row-reverse;
@@ -61,20 +75,6 @@ img {
   .reverse-right {
     order: 2; /* Set the order to 2, making it appear on the right */
   }
-}
-
-.sprite_container {
-  padding-top: 15vh; /* Adjust the top padding as needed */
-  padding-bottom: 15vh; /* Adjust the bottom padding as needed */
-  overflow: hidden;
-}
-
-.pattern-background {
-  width: 100%;
-  height: 10vw; /* Adjusted to a percentage of the viewport width */
-  background: url("img/svg/SVG/fullcurve.svg");
-  background-repeat: repeat-x; /* Ensure the pattern repeats along the x-axis */
-  background-size: auto 100%; /* Adjusted to auto for the x-axis and 100% for the y-axis */
 }
 
 /*********MOBILE********/
@@ -229,8 +229,8 @@ video {
 }
 
 .scroll {
-  max-width: calc(100% - 10px); /* Adjust the width as needed */
-  height: auto; /* Set a max-height for the container */
+  max-width: calc(100% - 10px);
+  height: auto;
   overflow-x: scroll; /* Changed to scroll for horizontal scrollbar */
   white-space: nowrap;
 }
@@ -241,10 +241,10 @@ video {
 }
 
 .scroll img {
-  width: auto; /* Set a fixed width for the images */
-  max-height: 1000px; /* Set a fixed height for the images */
-  margin-right: 5px; /* Adjust the margin as needed */
-  display: inline-block; /* Display images in a single line */
+  width: auto;
+  max-height: 1000px;
+  margin-right: 5px;
+  display: inline-block;
 }
 
 .pleasant {
@@ -285,7 +285,7 @@ video {
 }
 
 .project {
-  flex: 1 0 45%; /* Adjust as needed */
+  flex: 1 0 45%;
   margin: 10px;
 }
 
@@ -306,8 +306,6 @@ video {
 .project img {
   max-width: 100%;
 }
-
-/* ... existing styles ... */
 
 .project .mini-title {
   font-size: 14px;
