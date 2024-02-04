@@ -261,25 +261,6 @@ body {
   }
 }
 
-@media only screen and (min-width: 701px) {
-  .left-middle-right {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .left_02 {
-    grid-column: 1/2;
-  }
-
-  .middle {
-    grid-column: 2/3;
-  }
-
-  .right_02 {
-    grid-column: 3/4;
-  }
-}
-
 /********************05 pleasant****************/
 
 .iframe-wrapper {
