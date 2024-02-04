@@ -10,11 +10,6 @@ img {
   display: block;
 }
 
-body {
-  font-size: calc(16px + 1vw); /* Fluid typography adjusting font size based on viewport width */
-  line-height: calc(1.5 + 0.1vw); /* Fluid adjustment of line height based on viewport width */
-}
-
 main {
   max-width: 1600px;
   margin: 0 auto 0 auto;
@@ -40,7 +35,15 @@ main {
 
 .project-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 1000px) {
+  .project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .project {
@@ -64,7 +67,6 @@ main {
 
 .project img {
   max-width: 100%;
-  max-height: 300px;
 }
 
 /* ... existing styles ... */
