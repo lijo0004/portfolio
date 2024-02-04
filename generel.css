@@ -44,8 +44,9 @@ h3 {
 }
 
 p {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
+
 ul {
   padding-left: 60px;
 }
@@ -57,4 +58,9 @@ body {
 
 .pad {
   margin-bottom: 60px;
+}
+
+.forsidebillede {
+  padding: 20px;
+  max-width: 1600px;
 }
