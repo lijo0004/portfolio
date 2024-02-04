@@ -14,7 +14,6 @@ main {
   max-width: 1600px;
   margin: 0 auto 0 auto;
 }
-
 h1 {
   font-size: 3vw;
   text-align: center;
@@ -31,6 +30,7 @@ h2 {
   padding-bottom: 20px;
   font-family: "Fira Sans", sans-serif;
   padding-top: 20px;
+  font-weight: 600;
   padding-bottom: 20px;
 }
 
@@ -38,22 +38,22 @@ h3 {
   font-size: 1vw;
   font-style: italic;
   font-weight: 200;
+  font-family: "Fira Sans", sans-serif;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 p {
-  font-size: 1vw;
-  font-family: "Roboto", sans-serif;
+  font-family: "Fira Sans", sans-serif;
 }
-
 ul {
   padding-left: 60px;
 }
 
 body {
-  background-color: #d2e5e5;
+  background-color: #d2d8da;
 }
+/***** background-color: #d2e5e5;*****/
 
 .pad {
   margin-bottom: 60px;
