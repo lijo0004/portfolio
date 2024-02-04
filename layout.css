@@ -10,57 +10,6 @@ img {
   display: block;
 }
 
-main {
-  max-width: 1600px;
-  margin: 0 auto 0 auto;
-}
-
-h1 {
-  font-size: 3vw;
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin: 0;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 2vw;
-  padding-left: 30px;
-  padding-bottom: 20px;
-  font-family: "Fira Sans", sans-serif;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-h3 {
-  font-size: 1vw;
-  font-style: italic;
-  font-weight: 200;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-p {
-  font-size: 1vw;
-  font-family: "Roboto", sans-serif;
-}
-
-ul {
-  padding-left: 60px;
-}
-
-body {
-  background-color: #d2e5e5;
-}
-
-/***
-body {
-  background-color: #c3e6e9;
-  #bcd9db
-}
-
 /*****************02 web**************/
 
 @media only screen and (min-width: 800px) {
@@ -126,10 +75,6 @@ body {
   background: url("img/svg/SVG/fullcurve.svg");
   background-repeat: repeat-x; /* Ensure the pattern repeats along the x-axis */
   background-size: auto 100%; /* Adjusted to auto for the x-axis and 100% for the y-axis */
-}
-
-.pad {
-  margin-bottom: 60px;
 }
 
 /*********MOBILE********/
@@ -305,4 +250,88 @@ video {
 .pleasant {
   max-width: 400px;
   padding-bottom: 50px;
+}
+
+/******************OM MIG *********************/
+@media only screen and (min-width: 701px) {
+  .cv-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .left-section {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .right-section {
+    flex: 3;
+    padding: 20px;
+  }
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 1000px) {
+  .project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.project {
+  flex: 1 0 45%; /* Adjust as needed */
+  margin: 10px;
+}
+
+.profile img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.profile h2 {
+  margin-top: 10px;
+}
+
+.education h2,
+.projects h2 {
+  margin-bottom: 10px;
+}
+
+.project img {
+  max-width: 100%;
+}
+
+/* ... existing styles ... */
+
+.project .mini-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-info {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.about-me p {
+  padding-left: 20px;
+}
+
+.education p {
+  padding-left: 30px;
+}
+
+.education h2 {
+  padding-top: 40px;
+}
+
+.projects h2 {
+  padding-top: 50px;
 }
