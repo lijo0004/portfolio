@@ -92,3 +92,36 @@ h3 {
 .left-padding {
   padding-left: 55px;
 }
+
+.elongated_text {
+  padding: 25px;
+}
+
+.top-pad {
+  padding-top: 80px;
+}
+
+.lys_linkknap {
+  font-family: Roboto, sans-serif;
+  font-weight: 800;
+  color: #111;
+  border-radius: 100px;
+  background-color: #fff;
+  height: 40px;
+  width: 160px;
+}
+
+.linkknap:hover,
+.lys_linkknap:hover {
+  transition: box-shadow 0.1s linear;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.button-pad {
+  padding-left: 50px;
+}
+
+.space {
+  margin-left: 15px;
+}
