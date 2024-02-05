@@ -102,16 +102,17 @@ h3 {
 }
 
 .lys_linkknap {
+  display: inline-block;
   font-family: Roboto, sans-serif;
   font-weight: 800;
   color: #111;
   border-radius: 100px;
   background-color: #fff;
-  height: 40px;
-  width: 160px;
+  padding: 10px 20px;
+  text-decoration: none; /* Remove underline from links */
+  border: 2px solid #111; /* Add border */
 }
 
-.linkknap:hover,
 .lys_linkknap:hover {
   transition: box-shadow 0.1s linear;
   opacity: 0.5;
